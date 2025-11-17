@@ -5,12 +5,14 @@ public class Producto {
     private String sku;
     private int cantidad;
     private double precio;
+    private String color;
 
-    public Producto(String nombre, String sku, int cantidad, double precio) {
+    public Producto(String nombre, String sku, int cantidad, double precio, String color) {
         this.nombre = nombre;
         this.sku = sku;
         this.cantidad = cantidad;
         this.precio = precio;
+        this.color = color;
     }
 
     // Getters y setters
@@ -25,6 +27,9 @@ public class Producto {
 
     public double getPrecio() { return precio; }
     public void setPrecio(double precio) { this.precio = precio; }
+
+    public String getColor() { return color; }
+    public void setColor(String color) { this.color = color; }
 
     @Override
     public String toString() {
